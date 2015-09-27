@@ -1,3 +1,4 @@
+__author__ = "Evgeny"
 def fun():
     l = 0
     lmin = 0

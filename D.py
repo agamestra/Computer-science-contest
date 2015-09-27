@@ -1,3 +1,4 @@
+__author__ = "Evgeny"
 def fun():
     mx = int(input())
     while True:

@@ -1,3 +1,4 @@
+__author__ = "Evgeny"
 maxn = 1
 n = 1
 a = int(input())

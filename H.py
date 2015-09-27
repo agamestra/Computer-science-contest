@@ -1,3 +1,4 @@
+__author__ = "Evgeny"
 def fun():
     n = 1
     nmax = 1

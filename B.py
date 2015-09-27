@@ -1,3 +1,4 @@
+__author__ = "Evgeny"
 n = 0
 while True:
     a = int(input())
