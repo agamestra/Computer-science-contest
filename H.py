@@ -1,17 +1,27 @@
-def f():
-    n = 0
-    nmax = 0
-    def cont(a, x, n, nmax):
+def fun():
+    n = 1
+    nmax = 1
+    flag = 0
+    a = int(input())
+    while True:
         b = int(input())
         if b == 0:
             return nmax
-        elif a == b:
+        if b < a:
+            if flag == -1:
+                n += 1
+                if n > nmax:
+                    nmax = n
+            else:
+                n = 2
+                if n > nmax:
+                    nmax = n
+                flag = -1
+        elif b == a:
             n = 1
-            if n > nmax:
-                nmax = n
-            return cont(a, 0, n, nmax)
-        elif a < b:
-            if x == 1:
+            flag = 0
+        else:
+            if flag == 1:
                 n += 1
                 if n > nmax:
                     nmax = n
@@ -19,25 +29,6 @@ def f():
                 n = 2
                 if n > nmax:
                     nmax = n
-            a = b
-            return cont(a, 1, n, nmax)
-        elif a > b:
-            if x == -1:
-                n += 1
-                if n > nmax:
-                    nmax = n
-            else:
-                n = 2
-                if n > nmax:
-                    nmax = n
-            a = b
-            return cont(a, -1, n, nmax)
-    a = int(input())
-    if a == 0:
-        return n
-    else:
-        n += 1
-        if n > nmax:
-            nmax = n
-        return cont(a, 0, n, nmax)
-print(f())
+                flag = 1
+        a = b
+print(fun())
