@@ -1,1 +1,2 @@
-# Computer-science-contest
+# Computer science contest
+Репозиторий для совместного решения задач по информатике
